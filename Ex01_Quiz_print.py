@@ -10,6 +10,7 @@ print("--- 밀짚모자 해적단 ---")
 print("이름", "현상금", sep='\t\t')
 print("루피", 1200000, sep='\t\t')
 print("초파", 800000, sep='\t\t', end='\n\n')
+
 # 파이썬 프로그램이 설치된 경로를 출력하십시오
 # "C:\Program Files\python\python36"
 print("\"C", "Program Files", "python", "python36", sep='\\', end='\"\n')
