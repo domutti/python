@@ -22,7 +22,7 @@ elif n1 > n2:
     max1 = n1
 elif n1 < n2:
     max1 = n2
-print("두 수 중 큰 수는 {} 입니다.".format(n1))
+print("두 수 중 큰 수는 {} 입니다.".format(max1))
 print()
 
 
