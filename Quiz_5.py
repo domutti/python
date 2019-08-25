@@ -5,7 +5,7 @@ import time
 def clear(a):
     time.sleep(a)
     print("\n"*100)
-
+#clear(int(a)) a초 뒤에 창 정리
 
 '''
 나이를 입력받아서 성인, 미성년자를 확인
