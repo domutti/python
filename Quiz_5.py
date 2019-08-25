@@ -80,16 +80,18 @@ def switch(a):
     }.get(a, "ERROR")
 
 urDia = int(input("보유하신 다이아몬드의 개수를 입력하세요. > "))
-
+canITEM = 0
 if urDia < 5:
-    print("{}개의 다이아몬드로 살 수 있는 아이템은 {} 입니다.".format(urDia, switch(0)))
+    canITEM = switch(0)
 elif urDia >= 5 and urDia < 7:
-    print("{}개의 다이아몬드로 살 수 있는 아이템은 {} 입니다.".format(urDia, switch(1)))
+    canITEM = switch(1)
 elif urDia >= 7 and urDia < 15:
-    print("{}개의 다이아몬드로 살 수 있는 아이템은 {} 입니다.".format(urDia, switch(2)))
+    canITEM = switch(2)
 elif urDia >= 15 and urDia < 17:
-    print("{}개의 다이아몬드로 살 수 있는 아이템은 {} 입니다.".format(urDia, switch(3)))
+    canITEM = switch(3)
 elif urDia >= 17 and urDia < 25:
-    print("{}개의 다이아몬드로 살 수 있는 아이템은 {} 입니다.".format(urDia, switch(4)))
+    canITEM = switch(4)
 elif urDia >= 25:
-    print("{}개의 다이아몬드로 살 수 있는 아이템은 {} 입니다.".format(urDia, switch(5)))
+    canITEM = switch(5)
+print("{}개의 다이아몬드로 살 수 있는 아이템은 {} 입니다.".format(urDia, canITEM))
+clear(2)
