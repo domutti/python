@@ -130,7 +130,7 @@ A:Z 출력
 print("A부터 Z까지 출력합니다.")
 sleep(1)
 for l in range(65, 91):
-    print("{}".format(chr(l)))
+    print("{}".format(chr(l)), end = ' ')
 clear(2)
 
 
@@ -141,7 +141,7 @@ clear(2)
 string1 = "have a nice day"
 cnt = 0
 j = 0
-print("{}".format(string1))
+print(string1)
 SearchString = input("찾을 문자를 입력하세요 > ")
 
 for j in range(0, 15):
@@ -156,7 +156,12 @@ print("{}은 {} 개".format(SearchString, cnt))
 '''
 x = 0
 sum = 0
+cnt = 0
 
 for x in range(1, 31):
-    sum += x * 2
-print("30일동안 입금한 총 금액은 {}원 입니다.".format(sum+1))
+    if day == 1:
+        sum = 1
+    else:
+        sum *= 2
+    cnt += sum
+print("30일동안 입금한 총 금액은 {}원 입니다.".format(cnt))
